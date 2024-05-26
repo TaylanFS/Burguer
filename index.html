@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
@@ -98,7 +99,7 @@
                             <button
                                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                                 data-name="Hamburguer Duplo"
-                                data-price="18.90"
+                                data-price="32.90"
                             >
                                 <i class="fa fa-cart-plus text-lg text-white" ></i>
                             </button>
@@ -232,23 +233,23 @@
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]" >
             <h2 class="text-center font-bold text-2xl mb-2" > Meu carrinho </h2>
 
-            <div id="cart-itens" class="flex justify-between mb-2 flex-col" ></div>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col" ></div>
 
-            <p> Total: <span id="cart-total" > 0.00 </span></p>
+            <p class="font-bold" > Total: <span id="cart-total" > 0.00 </span></p>
 
             <p class="font-bold mt-4" > Endereço de entrega </p>
 
             <input
                 type="text"
                 placeholder="Digite seu endereço completo"
-                id="Address"
+                id="address"
                 class="w-full border-2 p-1 rounded my-1"
             />
 
             <p class="text-red-500 hidden" id="address-warn" > Digite seu endereço completo! </p>
 
             <div class="flex items-center justify-between mt-5 w-full" >
-                <button id="close-modal-btn" > Fechar </button>
+                <button id="close-modal-btn" > Fechar </button>  
                 <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded" > Finalizar Pedido </button>
             </div>
 
@@ -264,6 +265,7 @@
         </button>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
 
 </body>
