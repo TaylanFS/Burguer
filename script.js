@@ -161,7 +161,7 @@ checkoutBtn.addEventListener("click", function () {
 		.join();
 
 	const massage = encodeURIComponent(cartItems);
-	const phone = "+5585987765818";
+	const phone = "+5585994519724";
 
 	window.open(
 		`https://wa.me/${phone}?text=${massage} Endereço: ${addressInput.value}`,
